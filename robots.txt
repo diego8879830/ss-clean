@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Cambie la dirección cuando el sitio tenga su dominio final
+Sitemap: https://www.ejemplo.com/sitemap.xml
