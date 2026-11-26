@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Cambie la dirección cuando el sitio tenga su dominio final
-Sitemap: https://www.ejemplo.com/sitemap.xml
+# Si el sitio cambia de dominio, cambie esta dirección
+Sitemap: https://diego8879830.github.io/ss-clean/sitemap.xml

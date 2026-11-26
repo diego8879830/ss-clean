@@ -63,9 +63,9 @@ Al guardar y recargar, el resaltado desaparece, y también las notas que lo acom
 
 El JavaScript aplica `content.js` al cargar. Los textos de ejemplo también están escritos dentro de `index.html` para que la página se vea completa aunque el JavaScript falle. Para la versión final, busque `PLACEHOLDER` en `index.html` (cada dato de ejemplo tiene un comentario al lado) y ponga ahí también el dato real. Así Google y los navegadores sin JavaScript ven la información correcta.
 
-Además, cambie `https://www.ejemplo.com/` por el dominio real en:
+El sitio está preparado para GitHub Pages en `https://diego8879830.github.io/ss-clean/`. Si se muda a un dominio propio, cambie esa dirección en:
 
-- `index.html`: bloque `application/ld+json` (`url`, `logo`, `image`) y, mejor con la dirección completa, `og:image`
+- `index.html`: `canonical`, `og:url`, `og:image` y el bloque `application/ld+json` (`url`, `logo`, `image`)
 - `sitemap.xml` y `robots.txt`
 
 En el bloque `application/ld+json`, ponga también `telephone` (formato `+17875551234`) y `email`.
@@ -80,11 +80,11 @@ En el bloque `application/ld+json`, ponga también `telephone` (formato `+178755
 2. Arrastre **la carpeta completa** del proyecto.
 3. Listo: Netlify le da un enlace `https://algo.netlify.app`. Puede cambiar el nombre o conectar un dominio en *Site configuration → Domain management*.
 
-### GitHub Pages
+### GitHub Pages (dirección actual: https://diego8879830.github.io/ss-clean/)
 
-1. Suba estos archivos a un repositorio de GitHub (rama `main`, en la raíz).
-2. En el repositorio: *Settings → Pages → Build and deployment → Source: Deploy from a branch*, rama `main`, carpeta `/ (root)`.
-3. En uno o dos minutos queda en `https://<usuario>.github.io/<repositorio>/`.
+1. Si su cuenta de GitHub es gratis, el repositorio tiene que ser **público**: *Settings → General → Danger Zone → Change visibility → Public*.
+2. En el repositorio: *Settings → Pages → Build and deployment → Source: Deploy from a branch*. Escoja la rama donde está el sitio y la carpeta `/ (root)`, y oprima *Save*.
+3. En uno o dos minutos queda en `https://diego8879830.github.io/ss-clean/`. Cada vez que se sube un cambio a esa rama, la página se actualiza sola.
 
 ### Vercel
 
@@ -106,7 +106,7 @@ Todo esto está de ejemplo y hay que confirmarlo con la dueña:
 - [ ] **Certificaciones vigentes** (mujer empresaria, registros de suplidor, etc.)
 - [ ] **Productos y equipo propios**: confirmar
 - [ ] **Fotos**: las 6 de la galería son ilustraciones de ejemplo
-- [ ] **Dominio** del sitio (`https://www.ejemplo.com/` en JSON-LD, `sitemap.xml` y `robots.txt`)
+- [ ] **Dominio propio** (opcional): hoy apunta a `https://diego8879830.github.io/ss-clean/`
 - [ ] **Capability statement**: el botón lleva a Contacto. Si tienen el PDF, se puede enlazar directo
 
 **Datos confirmados que ya usa la página:** nombre legal, Morovis como ubicación, presidenta Luz V. Rivera Rivera, servicios de limpieza/janitorial y catering, clientes comerciales, gubernamentales e institucionales, y códigos NAICS 561720 y 722320.
